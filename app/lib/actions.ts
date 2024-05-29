@@ -127,8 +127,6 @@ export async function authenticate(
           return 'Something went wrong.';
       }
     }
-     revalidatePath('/dashboard');
-     redirect('/dashboard');
     throw error;
   }
 }
